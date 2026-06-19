@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社汚部屋 | O区分アートギャラリー＆プロデュース</title>
+    <style>
+        /* 全体のリセットと基本スタイル */
+        body, h1, h2, h3, p, ul {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #0d0d0d;
+            color: #f5f5f5;
+            font-family: 'Times New Roman', 'Noto Serif JP', 'ヒラギノ明朝 ProN', serif;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+        }
+        a {
+            color: #d4af37;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #fff;
+        }
+
+        /* ヘッダー */
+        header {
+            padding: 30px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #222;
+            background-color: rgba(13, 13, 13, 0.9);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-sizing: border-box;
+        }
+        .logo h1 {
+            font-size: 1.5rem;
+            color: #d4af37;
+            font-weight: 700;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        /* メインビジュアル */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            background: radial-gradient(circle, #1a1a1a 0%, #0d0d0d 100%);
+            margin-top: 80px;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #fff;
+            font-weight: 400;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #aaa;
+            max-width: 600px;
+        }
+
+        /* コンセプト */
+        .concept {
+            padding: 100px 10%;
+            text-align: center;
+            background-color: #121212;
+            border-bottom: 1px solid #222;
+        }
+        .concept h3 {
+            font-size: 2rem;
+            color: #d4af37;
+            margin-bottom: 40px;
+        }
+        .concept p {
+            max-width: 800px;
+            margin: 0 auto;
+            color: #ccc;
+            font-size: 1.1rem;
+        }
+
+        /* ギャラリー（作品紹介） */
+        .gallery {
+            padding: 100px 5%;
+        }
+        .gallery h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: #d4af37;
+            margin-bottom: 60px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        .card {
+            background-color: #161616;
+            border: 1px solid #222;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #222;
+            margin-bottom: 15px;
+        }
+        .card .title {
+            font-size: 1.2rem;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .card .desc {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        /* 会社概要 / サービス */
+        .services {
+            padding: 100px 10%;
+            background-color: #121212;
+            text-align: center;
+        }
+        .services h3 {
+            font-size: 2rem;
+            color: #d4af37;
+            margin-bottom: 40px;
+        }
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+        .service-item {
+            flex: 1;
+            min-width: 250px;
+            background-color: #0d0d0d;
+            padding: 30px;
+            border: 1px solid #222;
+        }
+        .service-item h4 {
+            color: #d4af37;
+            margin-bottom: 15px;
+        }
+
+        /* フッター */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            color: #555;
+            border-top: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ヘッダー -->
+    <header>
+        <div class="logo">
+            <h1>株式会社汚部屋</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#concept">Concept</a></li>
+                <li><a href="#gallery">Collection</a></li>
+                <li><a href="#services">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインビジュアル -->
+    <section class="hero">
+        <h2>混沌のなかに、美を見出す。</h2>
+        <p>私たちは、日常に埋もれた怠惰と執着を「芸術」へと昇華させる、世界で唯一の汚部屋プロデュースカンパニーです。</p>
+    </section>
+
+    <!-- コンセプト -->
+    <section class="concept" id="concept">
+        <h3>Concept</h3>
+        <p>
+            ただ散らかっているのではない。そこには住まう人の歴史、感情、そして時間が美しく堆積している。<br>
+            株式会社汚部屋は、見過ごされがちな室内の「混沌」を切り取り、額縁に収めることで、退廃的でありながらもどこか厳かな現代アート（O-Beya Art）として社会に提案します。
+        </p>
+    </section>
+
+    <!-- ギャラリー -->
+    <section class="gallery" id="gallery">
+        <h3>The Collection</h3>
+        <div class="grid">
+            
+            <!-- 作品1 -->
+            <div class="card">
+                <img src="作品1.png" alt="名称未設定のデザイン-removebg-preview.jpg">
+                <div class="title">「飽食の残滓とコントローラー」</div>
+                <div class="desc">日常の終わり、あるいは仮想現実への没頭。器に残された時間が、額縁の中で永遠となる。</div>
+            </div>
+
+            <!-- 作品2 -->
+            <div class="card">
+                <img src="作品2.png" alt="名称未設定のデザイン__1_-removebg-preview.jpg">
+                <div class="title">「祝祭の後の透明」</div>
+                <div class="desc">かつて喉を潤した琥珀色の液体。残されたガラス瓶は、沈黙という名の光を浴びている。</div>
+            </div>
+
+            <!-- 作品3 -->
+            <div class="card">
+                <img src="作品3.png" alt="名称未設定のデザイン__2_-removebg-preview.jpg">
+                <div class="title">「金属筒のなかの小宇宙」</div>
+                <div class="desc">白き手袋に守られし缶の底。乾燥した果実が、かつてそこにあった瑞々しさを静かに主張する。</div>
+            </div>
+
+            <!-- 作品4 -->
+            <div class="card">
+                <img src="作品4.png" alt="名称未設定のデザイン__3_-removebg-preview.jpg">
+                <div class="title">「懸垂する電脳」</div>
+                <div class="desc">重力に抗い、壁に這う配線。現代社会を繋ぐ命綱が、最も無防備な姿で宙に浮く。</div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- サービス -->
+    <section class="services" id="services">
+        <h3>Our Services</h3>
+        <div class="services-list">
+            <div class="service-item">
+                <h4>汚部屋の美術館化（アートプロデュース）</h4>
+                <p>あなたのお部屋の「散らかり」を独自の美学で再配置し、最高の芸術作品へと仕上げます。</p>
+            </div>
+            <div class="service-item">
+                <h4>メモリアルフォト撮影</h4>
+                <p>片付けの前に、あなたの歴史が詰まった空間をプロのカメラマンが額縁クオリティで撮影・保存します。</p>
+            </div>
+            <div class="service-item">
+                <h4>「無」への回帰（特殊清掃・片付け）</h4>
+                <p>アートとしての役目を終えた空間を、熟練のスタッフが何もない真っ白なキャンバス（原状回復）に戻します。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター -->
+    <footer>
+        <p>&copy; 2026 株式会社汚部屋 / O-BEYA Art Inc. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
